@@ -62,13 +62,13 @@ For more information on using the Angular CLI, including detailed command refere
 
 The commits made in this project follow the next convention: 
 
-🚀feat: Introduces a new feature (correlates with MINOR version increment)
-🛠️fix: Patches a bug (correlates with PATCH version increment)
-📄docs: Documentation only changes
-💅style: Code style changes (formatting, missing semicolons, etc.)
-🧨refactor: Code refactoring without changing functionality
-🐅perf: Performance improvements
-🥸test: Adding or updating tests
-🚧build: Changes to build system or dependencies
-⬆️ci: Changes to CI configuration files
+🚀feat: Introduces a new feature (correlates with MINOR version increment) \
+🛠️fix: Patches a bug (correlates with PATCH version increment) \
+📄docs: Documentation only changes \
+💅style: Code style changes (formatting, missing semicolons, etc.) \
+🧨refactor: Code refactoring without changing functionality \
+🐅perf: Performance improvements \
+🥸test: Adding or updating tests \
+🚧build: Changes to build system or dependencies \
+⬆️ci: Changes to CI configuration files \
 😴chore: Other changes that don't modify source or test files
