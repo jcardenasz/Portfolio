@@ -1,2 +1,2 @@
-export { Navbar } from './organisms/navbar/navbar';
-export { Footer } from './organisms/footer/footer';
+export { Navbar } from './organisms';
+export { Footer } from './organisms';
