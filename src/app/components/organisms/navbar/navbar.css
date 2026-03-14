@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 2rem;
+  width: 100%;
+  background-color: #0f172a;
+  color: white;
+}
+
+.navbar-logo h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  font-family: 'montserrat', sans-serif;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
