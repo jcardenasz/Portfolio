@@ -4,7 +4,7 @@
   align-items: center;
   padding: 0.3rem 2rem;
   width: 100%;
-  background-color: #0f172a;
+  background-color: #3b5dac;
   color: white;
 }
 
@@ -21,4 +21,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.logo-image {
+  height: 50px;
 }

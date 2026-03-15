@@ -7,8 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrl:'./icon.css',
 })
 export class Icon {
-  @Input() name: 'github' | 'linkedin' | 'instagram' | 'home' = 'home';
-  @Input() size: 'sm' | 'md' | 'lg' = 'md';
+  @Input() name: 'github' | 'linkedin' | 'instagram' | 'home' | 'logo'= 'home';
+  @Input() size: 'sm' | 'md' | 'lg' | 'xl' = 'md';
 
   get iconSrc(): string{
     return `icons/${this.name}.svg`;
