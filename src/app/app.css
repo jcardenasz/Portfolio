@@ -1,0 +1,13 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+app-root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.app-container {
+  overflow-y: auto;
+}

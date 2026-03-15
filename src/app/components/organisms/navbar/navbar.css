@@ -4,7 +4,7 @@
   align-items: center;
   padding: 0.3rem 2rem;
   width: 100%;
-  background-color: #3b5dac;
+  background: linear-gradient(180deg, #345091, #5170b8);
   color: white;
 }
 
@@ -13,17 +13,17 @@
   align-items: center;
   justify-content: center;
   height: 50px;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out opacity;
 }
 
 .logo-image:hover {
   cursor: pointer;
-  transform: scale(1.08);
+  transform: scale(1.10);
 }
 
 .navbar-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style: none;
   margin: 0;
   padding: 0;
