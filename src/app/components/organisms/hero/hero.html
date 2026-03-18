@@ -1,11 +1,11 @@
 <section class="hero-section">
-  <!--
+  <!-- Background video -->
   <video class="hero-video" autoplay muted loop playsinline poster="poster.jpg">
     <source src="mockVideo.mp4" type="video/mp4" />
   </video>
--->
+
+  <!-- Overlay text -->
   <div class="hero-overlay">
-    <h1>{{ displayText() }}</h1>
-    <p>Full Stack Software Developer</p>
+    <h1>{{displayText()}}<span class="cursor" [class.blink]="mode() === 'waiting'">|</span></h1>
   </div>
 </section>
