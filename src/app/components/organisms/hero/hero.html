@@ -6,6 +6,6 @@
 
   <!-- Overlay text -->
   <div class="hero-overlay">
-    <h1>{{displayText()}}<span class="cursor" [class.blink]="mode() === 'waiting'">|</span></h1>
+    <h1>{{displayText()}}<span class="cursor" [class.blink]="mode() === 'waiting' || mode() === 'preWriting'">|</span></h1>
   </div>
 </section>

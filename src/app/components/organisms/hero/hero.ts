@@ -18,7 +18,7 @@ export class Hero implements OnInit {
   text = [
     'My name is Juan Camilo Cardenas Zabala',
     'I am a Fullstack Software Developer living in Bogotá',
-    'Let\'s forge great things together!',
+    'Let\'s forge great solutions together!',
   ];
 
   ngOnInit() {
@@ -47,7 +47,7 @@ export class Hero implements OnInit {
       this.charIndex.set(0);
       this.mode.set('writing');
       this.runTypewriter();
-    }, 1200);
+    }, 1400);
   }
 
   startWriting(sentence: string = this.text[this.sentenceIndex()]) {
