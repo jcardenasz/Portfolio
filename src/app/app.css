@@ -10,4 +10,5 @@ app-root {
 
 .app-container {
   overflow-y: auto;
+  margin-bottom: 2rem;
 }

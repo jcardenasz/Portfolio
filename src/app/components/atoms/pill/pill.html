@@ -1,0 +1,14 @@
+<div
+  class="pill"
+  [class.active]="isActive()"
+  (mouseenter)="show()"
+  (mouseleave)="hide()"
+>
+  <div class="pill-title">
+    {{ item.title }}
+  </div>
+
+  <div class="pill-description">
+    {{ item.description }}
+  </div>
+</div>
