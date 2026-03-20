@@ -21,6 +21,12 @@ export class Hero implements OnInit {
     'Let\'s forge great solutions together!',
   ];
 
+  textSpanish = [
+    'Mi nombre es Juan Camilo Cardenas Zabala',
+    'Soy Desarrollador de Software Fullstack y vivo en Bogotá',
+    '¡Conectemos para crear grandes soluciones juntos!',
+  ];
+
   ngOnInit() {
     this.runTypewriter();
   }
