@@ -1,30 +1,35 @@
 <footer class="footer">
   <div class="footer-content">
+    <ul class="footer-links">
+      <li><app-button redirect="/" variant="footer">Home</app-button></li>
+      <li><app-button redirect="/about" variant="footer">About</app-button></li>
+      <li><app-button redirect="/projects" variant="footer">Projects</app-button></li>
+      <li><app-button redirect="/contact" variant="footer">Contact</app-button></li>
+    </ul>
 
     <div class="footer-logo">
-      <h2>Juan Cárdenas</h2>
-      <p>Full Stack Developer</p>
+      <a href="/" class="logo-image">
+        <img src="favicon.ico" width="120"/>
+      </a>
+      <h2>Juan Camilo Cardenas Zabala</h2>
+      <p>Full Stack Software Developer</p>
     </div>
 
-    <ul class="footer-links">
-    <li><app-button redirect="/">Home</app-button></li>
-    <li><app-button redirect="/about">About</app-button></li>
-    <li><app-button redirect="/projects">Projects</app-button></li>
-    <li><app-button redirect="/contact">Contact</app-button></li>
-  </ul>
-
     <div class="footer-social">
-      <a href="https://github.com/jcardenasz" target="_blank">
+      <a href="https://github.com/jcardenasz" target="_blank" rel="noopener noreferrer">
         <app-icon name="github" size="md"></app-icon>
       </a>
-      <a href="https://linkedin.com/in/jccardenasz" target="_blank">
+      <a href="https://linkedin.com/in/jccardenasz" target="_blank" rel="noopener noreferrer">
         <app-icon name="linkedin" size="lg"></app-icon>
       </a>
-      <a href="https://instagram.com/camilo_cz?igsh=eWI4c3hleGhqaDRz" target="_blank" rel="noreferrer">
+      <a
+        href="https://instagram.com/camilo_cz?igsh=eWI4c3hleGhqaDRz"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <app-icon name="instagram" size="md"></app-icon>
       </a>
     </div>
-
   </div>
 
   <div class="footer-bottom">

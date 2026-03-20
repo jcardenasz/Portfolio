@@ -1,14 +1,13 @@
 <nav class="navbar">
   <div class="navbar-logo">
-    <h1>Juan Cárdenas</h1>
+    <a href="/" class="logo-image">
+      <app-icon name="logo" size="xl"></app-icon>
+    </a>
   </div>
   <ul class="navbar-links">
-    <li><app-button redirect="/">Home</app-button></li>
-    <li><app-button redirect="/about">About</app-button></li>
-    <li><app-button redirect="/projects">Projects</app-button></li>
-    <li><app-button redirect="/contact">Contact</app-button></li>
+    <li><app-button redirect="/" variant="navbar">Home</app-button></li>
+    <li><app-button redirect="/about" variant="navbar">About</app-button></li>
+    <li><app-button redirect="/projects" variant="navbar">Projects</app-button></li>
+    <li><app-button redirect="/contact" variant="navbar">Contact</app-button></li>
   </ul>
-  <div class="navbar-actions">
-    <!-- Add login/logout buttons or user-related actions here -->
-  </div>
 </nav>

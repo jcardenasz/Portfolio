@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { Button } from '../../atoms';
+import { Button, Icon } from '../../atoms';
 
 @Component({
   selector: 'app-navbar',
-  imports: [Button],
+  imports: [Button, Icon],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })
