@@ -30,10 +30,10 @@
   transform: scale(1.03);
 }
 
-/* Text */
 .description-content h2 {
   font-size: 28px;
   margin-bottom: 16px;
+  font-family: 'Satoshi', sans-serif;
 }
 
 .description-content p {

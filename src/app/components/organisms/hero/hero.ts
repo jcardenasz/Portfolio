@@ -54,7 +54,7 @@ export class Hero implements OnInit {
     if (this.charIndex() <= sentence.length) {
       this.displayText.set(sentence.substring(0, this.charIndex()));
       this.charIndex.update(v => v + 1);
-      setTimeout(() => this.startWriting(), 150);
+      setTimeout(() => this.startWriting(), 80);
     } else {
       this.mode.set('waiting');
       this.runTypewriter();
