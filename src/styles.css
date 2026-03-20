@@ -1,2 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'tailwindcss';
+@font-face {
+    font-family: 'Satoshi';
+    src: 'fonts/Satoshi/Satoshi-Regular.ttf' format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'New Kansas';
+    src: 'fonts/NewKansas/NewKansas-Regular.otf' format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
