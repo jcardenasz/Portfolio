@@ -16,6 +16,11 @@
   filter: brightness(0.5);
 }
 
+.hero-video img {
+  opacity: 0.4;
+  filter: blur(5px);
+}
+
 .hero-overlay {
   position: relative;
   z-index: 1;
