@@ -1,0 +1,75 @@
+.tools-section {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-family: 'Satoshi', sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 1.5rem 0;
+  background-color: #f0f0f0;
+}
+
+/* Track (animation layer) */
+.track {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: max-content;
+
+  animation: scroll 30s linear infinite;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.carousel:hover .track {
+  animation-play-state: paused;
+}
+
+/* Gradient fade (LEFT + RIGHT) */
+.carousel::before,
+.carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* LEFT fade */
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, white, transparent);;
+}
+
+/* RIGHT fade */
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to right, transparent, white);;
+}
