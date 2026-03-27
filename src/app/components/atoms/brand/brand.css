@@ -1,0 +1,22 @@
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.brand-image {
+  height: 3rem;
+  width: auto;
+  object-fit: contain;
+
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.brand-image:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { brands } from './brandList';
 
 @Component({
   selector: 'app-brand',
@@ -7,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './brand.css',
 })
 export class Brand {
-
+  @Input() Name: string = '';
+  @Input() Image: string = '';
 }
