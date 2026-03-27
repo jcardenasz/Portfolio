@@ -1,0 +1,8 @@
+<section>
+  <div class="tools-carousel">
+    <div class="carousel-item" *ngFor="let tool of tools">
+      <img [src]="tool.icon" [alt]="tool.name" class="tool-icon" />
+      <p>{{ tool.name }}</p>
+    </div>
+  </div>
+</section>
