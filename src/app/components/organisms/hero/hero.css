@@ -18,7 +18,6 @@
 
 .hero-video img {
   opacity: 0.4;
-  filter: blur(5px);
 }
 
 .hero-overlay {
