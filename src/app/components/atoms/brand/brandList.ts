@@ -106,5 +106,17 @@ export const brands = [
     {
       name: 'Tailwindcss',
       image: 'https://res.cloudinary.com/didxysibj/image/upload/tailwindcss_fu4kr4.webp',
-    }
+    },
+    {
+      name: 'Golang',
+      image: 'https://res.cloudinary.com/didxysibj/image/upload/Go_v2p6ug.webp',
+    },
+    {
+      name: 'Nginx',
+      image: 'https://res.cloudinary.com/didxysibj/image/upload/Nginx_wduvav.webp',
+    },
+    {
+      name: 'SNMP',
+      image: 'https://res.cloudinary.com/didxysibj/image/upload/SNMP_joapg1.webp',
+    },
   ]
