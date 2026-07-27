@@ -1,0 +1,244 @@
+.project-detail {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 5rem;
+  color: #111;
+  text-align: center;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 2rem;
+  color: #1a56db;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease, gap 0.3s ease;
+}
+
+/* Animated underline */
+.back-link::after {
+  content: "";
+  position: absolute;
+  left: 1.4rem; /* starts after the arrow */
+  bottom: -3px;
+  width: calc(100% - 1.4rem);
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.back-link:hover {
+  color: #0d3fa8;
+  gap: 0.65rem;
+  transform: translateX(-3px);
+}
+
+.back-link:hover::after {
+  transform: scaleX(1);
+}
+
+.project-detail h1 {
+  margin: 0 0 1rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #0a0a0a;
+}
+
+.description {
+  text-align: justify;
+  color: #333;
+  line-height: 1.75;
+  font-size: 1.02rem;
+  max-width: 68ch;
+  margin: 0 auto 2.5rem;
+}
+
+/* Carousel (2+ images) */
+.carousel {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #eef1f6;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+
+.carousel-image.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  color: #1a56db;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-btn:hover {
+  background: #1a56db;
+  color: #fff;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.carousel-btn.prev { left: 12px; }
+.carousel-btn.next { right: 12px; }
+
+.carousel-dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.dot.active {
+  background: #000000;
+  transform: scale(1.3);
+}
+
+/* Single image (no carousel needed) */
+.single-image {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.single-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Bullet points */
+.bullet-points {
+  list-style: none;
+  margin: 0 auto 2.5rem;
+  padding: 0;
+  max-width: 60ch;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bullet-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: #f4f6fb;
+  border: 1px solid #e4e8f2;
+  border-radius: 10px;
+  color: #222;
+  line-height: 1.6;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.bullet-points li:hover {
+  background: #eaf0fd;
+  border-color: #c3d4f7;
+  transform: translateX(4px);
+}
+
+.bullet-icon {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #1a56db;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.15rem;
+}
+
+/* Stack tags */
+.stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.tag {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #111;
+  border-radius: 999px;
+  color: #111;
+  background: transparent;
+  font-weight: 500;
+  cursor: default;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.tag:hover {
+  background: #1a56db;
+  border-color: #1a56db;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.not-found {
+  text-align: center;
+  padding: 4rem 0;
+  color: #555;
+}

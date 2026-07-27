@@ -1,0 +1,72 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project-card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  z-index: 2;
+}
+
+.card-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease;
+}
+
+.project-card:hover .card-image {
+  filter: grayscale(0%);
+}
+
+.card-content {
+  padding: 1.25rem;
+}
+
+.card-content h3 {
+  margin: 0 0 0.5rem;
+  color: #fff;
+}
+
+.card-content p {
+  margin: 0 0 0.75rem;
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #ccc;
+}

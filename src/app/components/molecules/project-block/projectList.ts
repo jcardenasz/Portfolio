@@ -9,9 +9,11 @@ interface Project {
 
 export const projects: Project[] = [
   {
-    name: 'Module for collecting and processing data from the wireless network at the National University of Colombia, Bogotá campus',
-    images: ['/images/Projects/GraduationProject/project1.png'],
-    description: `the design and implementation of a monitoring module for the wireless network at the National University of Colombia’s Bogotá campus, with the goal of collecting, processing,
+    name: 'SNMP WLAN Recolector, processor and publisher method, Universidad Nacional Bogotá',
+    images: [
+      '/images/Projects/GraduationProject/snmp-recolector.webp'
+    ],
+    description: `Module for collecting and processing data from the wireless network at the National University of Colombia, Bogotá campus consists on the design and implementation of a monitoring module for the wireless network at the National University of Colombia’s Bogotá campus, with the goal of collecting, processing,
     and publishing information on the number of clients connected to the access points distributed across the campus. The solution uses the SNMP protocol to query multiple Cisco wireless controllers and was developed in Go,
     leveraging concurrency mechanisms to optimize execution times. The system transforms low-level information from the network infrastructure into consolidated data by building, through a processing workflow consisting of collection,
     processing and publication stages. As a result, a tool was developed capable of delivering up-to-date information on wireless network occupancy in less than thirty seconds, enabling it to feed visualization systems such as heat maps and facilitating network monitoring,
@@ -32,11 +34,33 @@ export const projects: Project[] = [
       'JSON',
       'GitHub',
     ],
-    route: '/projects/graduation-project',
+    route: 'graduation-project',
+  },
+  {
+    name: 'Portfolio',
+    images: [
+      '/images/Projects/Portfolio/portfolio-home-footer.webp',
+      '/images/Projects/Portfolio/portfolio-home-values.webp',
+    ],
+    description: `This is my personal portfolio website where I showcase my projects, skills, and experience. It is built with NextJS and React, and it features a modern design with a focus on user experience.
+    The main objective of this project was to create a personal brand and to have a platform where I can share my work and connect with potential employers or collaborators.`,
+    BulletPoints: [
+      'Beautiful minimalistic design with a focus on user experience and accessibility.',
+    ],
+    stack: [
+      'NextJS',
+      'React',
+      'TailwindCSS',
+      'Vercel',
+      'GitHub',
+    ],
+    route: 'portfolio',
   },
   {
     name: 'Tech Trend Emporium',
-    images: ['assets/images/project1.png'],
+    images: [
+      '/images/Projects/TechTrendEmporium/carousel.png'
+    ],
     description: `Tech Trend Emporium is a full-stack e-commerce application developed to provide a secure, scalable, and user-friendly online shopping experience.
     My primary contributions included developing the frontend and architecting the database, translating business requirements into an intuitive interface and a well-structured data model.
     The database was designed to efficiently support core e-commerce features such as authentication, product catalog management, shopping carts, wishlists, customer reviews, and order management.
@@ -57,11 +81,16 @@ export const projects: Project[] = [
       'Swagger',
       'GitHub',
     ],
-    route: '/projects/tech-trend-emporium',
+    route: 'tech-trend-emporium',
   },
   {
     name: 'UNstocked',
-    images: ['assets/images/project1.png'],
+    images: [
+      '/images/Projects/UNstocked/UNstocked-login.webp',
+      '/images/Projects/UNstocked/UNstocked-products.webp',
+      '/images/Projects/UNstocked/UNstocked-sale.webp',
+      '/images/Projects/UNstocked/UNstocked-transactions.webp'     
+    ],
     description: `This is the first formal academic project i have ever worked on.
     Consists on a web app for a local business that needs to manage their inventory and sales while having the ability to:
     have an independent user account and logging in and out of it,
@@ -93,11 +122,17 @@ export const projects: Project[] = [
       'React',
       'GitHub',
     ],
-    route: '/projects/unstocked',
+    route: 'unstocked',
   },
   {
     name: 'Valracol',
-    images: ['assets/images/project1.png'],
+    images: [
+      '/images/Projects/Valracol/Valracol-home.webp',
+      '/images/Projects/Valracol/Valracol-footer.webp',
+      '/images/Projects/Valracol/Valracol-map.webp',
+      '/images/Projects/Valracol/Valracol-products-bottom.webp',
+      '/images/Projects/Valracol/Valracol-products.webp'
+    ],
     description: `Valracol is a Colombian company that provides electric materials,
     instruments and tools for the industry market and also gives maintenance to transformers and electric generators.
     This project consists on a web app for the company that is focused on showing products with their details, allowing users
@@ -125,11 +160,16 @@ export const projects: Project[] = [
       'TailwindCSS',
       'GitHub',
     ],
-    route: '/projects/valracol',
+    route: 'valracol',
   },
   {
     name: 'Induguantes',
-    images: ['assets/images/project1.png'],
+    images: [
+      '/images/Projects/Induguantes/Induguantes-hero.webp',
+      '/images/Projects/Induguantes/Induguantes-map.webp',
+      '/images/Projects/Induguantes/Induguantes-productos-bottom.webp',
+      '/images/Projects/Induguantes/Induguantes-productos.webp'
+    ],
     description: `Induguantes del Llano is a Colombian company that commercializes industrial security elements and products
     to guarantee the safety of workers in the industry. This project consists on a web app for the company that is focused on showing products with their details,
     allowing users to check them and contact the company for more information about them.
@@ -151,11 +191,13 @@ export const projects: Project[] = [
       'Bun',
       'GitHub',
     ],
-    route: '/projects/share2us',
+    route: 'induguantes',
   },
   {
     name: 'Share2us',
-    images: ['assets/images/project1.png'],
+    images: [
+      '/images/Projects/Share2us/share2us-logos.webp',
+    ],
     description: `Share2us is a project that consists on a web app that provides a way of sharing files between users using
     customizable links that can be protected with passwords and have an expiration date. The idea behind the project emerged by thinking
     on an easy way of sharing files rapidly without much configuration and having always the most control. It was also needy to protect
@@ -174,11 +216,13 @@ export const projects: Project[] = [
             'Vercel',
             'GitHub',
           ],
-    route: '/projects/share2us',
+    route: 'share2us',
   },
   {
     name: 'Mi Ciudad a Mordiscos',
-    images: ['assets/images/project1.png'],
+    images: [
+      '/images/Projects/Mcam/mcam.webp'
+    ],
     description: `Mi ciudad a mordiscos was an important academic project where our team and I brought to life a web application that consisted
     of a map where you could see the punctuation of restaurants, comments and menus. The main objective of the project was to provide a way of sharing opinions
     about restaurants and their food, so that users could have a better idea of where to go and what to eat. The main need was to implement it using a modular microservices architecture.`,
@@ -195,23 +239,6 @@ export const projects: Project[] = [
       'tailwindCSS',
       'GitHub',
     ],
-    route: '/projects/mcam',
-  },
-  {
-    name: 'Portfolio',
-    images: ['assets/images/project1.png'],
-    description: `This is my personal portfolio website where I showcase my projects, skills, and experience. It is built with NextJS and React, and it features a modern design with a focus on user experience.
-    The main objective of this project was to create a personal brand and to have a platform where I can share my work and connect with potential employers or collaborators.`,
-    BulletPoints: [
-      'Beautiful minimalistic design with a focus on user experience and accessibility.',
-    ],
-    stack: [
-      'NextJS',
-      'React',
-      'TailwindCSS',
-      'Vercel',
-      'GitHub',
-    ],
-    route: '/projects/portfolio',
+    route: 'mcam',
   },
 ];
