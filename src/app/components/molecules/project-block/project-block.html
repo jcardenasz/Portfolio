@@ -1,1 +1,19 @@
-<p>project-block works!</p>
+<div class="project-grid">
+  @for (project of projects; track project.route) {
+    <a [routerLink]="'/projects/' + project.route" class="project-card">
+      @if (project.images.length > 0) {
+        <div class="card-image" [style.background-image]="'url(' + project.images[0] + ')'"></div>
+      }
+      <div class="card-content">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+        <div class="stack-tags">
+          @for (tech of project.stack; track tech) {
+            <span class="tag">{{ tech }}</span>
+          }
+        </div>
+      </div>
+    </a>
+  }
+  <router-outlet></router-outlet>
+</div>

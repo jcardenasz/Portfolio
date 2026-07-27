@@ -1,0 +1,58 @@
+@if (project(); as p) {
+  <div class="project-detail">
+    <a routerLink="/projects" class="back-link">← Back to projects</a>
+
+    <h1>{{ p.name }}</h1>
+    <p class="description">{{ p.description }}</p>
+
+    @if (p.images.length > 1) {
+      <div class="carousel">
+        <div class="carousel-track">
+          @for (image of p.images; track image; let i = $index) {
+            <img
+              [src]="image"
+              [alt]="p.name"
+              class="carousel-image"
+              [class.active]="i === activeImage()"
+            />
+          }
+        </div>
+
+        <button class="carousel-btn prev" (click)="prevImage()" aria-label="Previous image">‹</button>
+        <button class="carousel-btn next" (click)="nextImage()" aria-label="Next image">›</button>
+
+        <div class="carousel-dots">
+          @for (image of p.images; track image; let i = $index) {
+            <button
+              class="dot"
+              [class.active]="i === activeImage()"
+              (click)="setImage(i)"
+              [attr.aria-label]="'Go to image ' + (i + 1)"
+            ></button>
+          }
+        </div>
+      </div>
+    } @else if (p.images.length === 1) {
+      <div class="single-image">
+        <img [src]="p.images[0]" [alt]="p.name" />
+      </div>
+    }
+
+    <ul class="bullet-points">
+      @for (point of p.BulletPoints; track point) {
+        <li>
+          <span class="bullet-icon">✓</span>
+          <span>{{ point }}</span>
+        </li>
+      }
+    </ul>
+
+    <div class="stack-tags">
+      @for (tech of p.stack; track tech) {
+        <span class="tag">{{ tech }}</span>
+      }
+    </div>
+  </div>
+} @else {
+  <p class="not-found">Project not found.</p>
+}
