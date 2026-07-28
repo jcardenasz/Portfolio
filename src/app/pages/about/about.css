@@ -1,0 +1,164 @@
+.about-container {
+  color: #111;
+}
+
+/* Hero */
+.hero h1 {
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* Socials */
+.socials {
+  margin-bottom: 3rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  color: #111;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.social-link:hover {
+  background: #1a56db;
+  border-color: #1a56db;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Shared section styling */
+.experience,
+.education,
+.certifications,
+.languages {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience h2,
+.education h2,
+.certifications h2,
+.languages h2 {
+  position: relative;
+  display: inline-block;
+  color: #0a0a0a;
+}
+
+.experience h2::after,
+.education h2::after,
+.certifications h2::after,
+.languages h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 40px;
+  height: 3px;
+  background: #1a56db;
+  border-radius: 2px;
+}
+
+/* Lists */
+.experience ul,
+.certifications ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.experience li,
+.certifications li {
+  position: relative;
+  padding: 0.85rem 1rem 0.85rem 2rem;
+  background: #f4f6fb;
+  border: 1px solid #e4e8f2;
+  border-radius: 10px;
+  color: #222;
+  line-height: 1.5;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.experience li::before,
+.certifications li::before {
+  content: '';
+  position: absolute;
+  left: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1a56db;
+}
+
+.experience li:hover,
+.certifications li:hover {
+  background: #eaf0fd;
+  border-color: #c3d4f7;
+  transform: translateX(4px);
+}
+
+/* Education */
+.education .flex > div {
+  padding: 1rem 1.25rem;
+  background: #f4f6fb;
+  border: 1px solid #e4e8f2;
+  border-radius: 10px;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.education .flex > div:hover {
+  background: #eaf0fd;
+  border-color: #c3d4f7;
+  transform: translateY(-2px);
+}
+
+.education p.font-bold {
+  color: #0a0a0a;
+}
+
+/* Languages */
+.languages ul {
+  list-style: none;
+  padding: 0;
+}
+
+.languages li {
+  padding: 0.5rem 1.1rem;
+  background: transparent;
+  border: 1px solid #111;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #111;
+  cursor: default;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.languages li:hover {
+  background: #1a56db;
+  border-color: #1a56db;
+  color: #fff;
+  transform: translateY(-2px);
+}

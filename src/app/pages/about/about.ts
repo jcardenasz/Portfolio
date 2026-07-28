@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { Maintenance } from "../../components/molecules/maintenance/maintenance";
 
 @Component({
   selector: 'app-about',
-  imports: [Maintenance],
+  imports: [],
   templateUrl: './about.html',
   styleUrl: './about.css',
 })
