@@ -17,13 +17,13 @@ export class Hero implements OnInit {
 
   text = [
     'My name is Juan Camilo Cardenas Zabala',
-    'I am a Fullstack Software Developer living in Bogotá',
+    'I am a Systems and Computing enginee living in Bogotá',
     'Let\'s forge great solutions together!',
   ];
 
   textSpanish = [
     'Mi nombre es Juan Camilo Cardenas Zabala',
-    'Soy Desarrollador de Software Fullstack y vivo en Bogotá',
+    'Soy Ingeniero de sistemas y computación y vivo en Bogotá',
     '¡Conectemos para crear grandes soluciones juntos!',
   ];
 
