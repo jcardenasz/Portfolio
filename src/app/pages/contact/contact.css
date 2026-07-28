@@ -1,0 +1,42 @@
+.contact-container {
+  color: #111;
+}
+
+.contact-hero p {
+  max-width: 55ch;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+.mailto-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.9rem 1.75rem;
+  border: 1px solid #111;
+  border-radius: 999px;
+  color: #111;
+  font-weight: 500;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mailto-button:hover {
+  background: #1a56db;
+  border-color: #1a56db;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(26, 86, 219, 0.25);
+}
+
+.mailto-button svg {
+  flex-shrink: 0;
+}
+
+.mailto-hint {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #999;
+}

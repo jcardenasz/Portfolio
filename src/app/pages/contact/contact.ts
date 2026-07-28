@@ -1,13 +1,19 @@
 import { Component } from '@angular/core';
-import { Maintenance } from '../../components/molecules/maintenance/maintenance';
-
+import { Socials } from "../../components/molecules";
 
 @Component({
   selector: 'app-contact',
-  imports: [Maintenance],
+  standalone: true,
+  imports: [Socials],
   templateUrl: './contact.html',
-  styleUrl: './contact.css',
+  styleUrls: ['./contact.css']
 })
 export class Contact {
+  email = 'jucamiza28@gmail.com';
+  subject = 'Portfolio Contact';
+  body = "Hi Juan Camilo,\n\nI'd like to talk about...";
 
+  get mailtoLink(): string {
+    return `mailto:${this.email}?subject=${encodeURIComponent(this.subject)}&body=${encodeURIComponent(this.body)}`;
+  }
 }
