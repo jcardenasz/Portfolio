@@ -1,1 +1,21 @@
-<app-maintenance [page]="'Contact'"></app-maintenance>
+<div class="contact-container mx-auto max-w-2xl py-20">
+  <section class="contact-hero text-center">
+    <h1 class="text-4xl font-bold mb-4 pt-20">Let's Talk</h1>
+    <p class="text-xl text-gray-600 mb-12">
+      Do you have a project in mind, a question, or just want to connect? Send me an email... I usually respond within a day.
+    </p>
+
+    <a [href]="mailtoLink" class="mailto-button">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16v16H4z" opacity="0"/>
+        <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6z"/>
+        <polyline points="22 6 12 13 2 6"/>
+      </svg>
+      <span>{{ email }}</span>
+    </a>
+
+    <p class="mailto-hint">Click to open your email client</p>
+  </section>
+
+  <app-socials></app-socials>
+</div>
