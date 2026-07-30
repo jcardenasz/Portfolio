@@ -1,0 +1,27 @@
+<div class="guides-container mx-auto max-w-6xl py-20 pt-30 px-6">
+  <section class="text-center mb-16">
+    <h1 class="guides-title text-4xl font-bold mb-4">Guides</h1>
+    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+      Notes and write-ups on things I build and learn along the way.
+    </p>
+  </section>
+
+  <div class="guides-grid">
+    @for (guide of guides; track guide.route) {
+      <a class="guide-card" [routerLink]="['/guides', guide.route]">
+        <h2>{{ guide.title }}</h2>
+        <p>{{ guide.description }}</p>
+        <div class="guide-card-footer">
+          @if (guide.tags?.length) {
+            <div class="guide-tags">
+              @for (tag of guide.tags; track tag) {
+                <span class="guide-tag">{{ tag }}</span>
+              }
+            </div>
+          }
+          <span class="date">{{ guide.date }}</span>
+        </div>
+      </a>
+    }
+  </div>
+</div>

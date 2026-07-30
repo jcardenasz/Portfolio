@@ -17,7 +17,7 @@ export class Hero implements OnInit {
 
   text = [
     'My name is Juan Camilo Cardenas Zabala',
-    'I am a Systems and Computing enginee living in Bogotá',
+    'I am a Systems and Computing engineer living in Bogotá',
     'Let\'s forge great solutions together!',
   ];
 
