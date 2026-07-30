@@ -1,0 +1,27 @@
+@if (guide(); as g) {
+  <article class="guide-article mx-auto max-w-3xl py-20 pt-30 px-6">
+    <a routerLink="/guides" class="back-link">← Back to guides</a>
+
+    <header class="guide-header">
+      <div class="guide-header-meta">
+        <span class="date">{{ g.date }}</span>
+        @if (g.tags?.length) {
+          @for (tag of g.tags; track tag) {
+            <span class="guide-tag">{{ tag }}</span>
+          }
+        }
+      </div>
+      <h1>{{ g.title }}</h1>
+      @if (g.description) {
+        <p class="guide-description">{{ g.description }}</p>
+      }
+    </header>
+
+    <div class="markdown-body" [innerHTML]="content()"></div>
+  </article>
+} @else {
+  <div class="guide-not-found">
+    <p>Guide not found.</p>
+    <a routerLink="/guides" class="back-link">← Back to guides</a>
+  </div>
+}
