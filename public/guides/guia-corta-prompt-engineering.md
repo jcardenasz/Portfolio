@@ -267,17 +267,56 @@ La clave es ser **directo y específico.**
 - Dígale a Claude **lo que desea** (tarea).
 - Agregue **detalles** o **restricciones.**
 
+```
+Escribe un correo de seguimiento para un cliente que no ha respondido en dos semanas.
+El tono debe ser cordial pero directo, de máximo 100 palabras, y debe incluir una
+pregunta clara al final para facilitar la respuesta.
+```
+
 ### *Prompts zero-shot* o *few-shot*:
 Estos prompts consisten en pedirle a Claude que realice una tarea sin darle ejemplos *(zero-shot)* o se realiza una petición con pocos ejemplos *(few-shot)* para que Claude pueda seguir el estilo, tono o formato.
+
+```
+Zero-shot:
+Clasifica el siguiente comentario como positivo, negativo o neutral: "El servicio
+fue rápido pero el producto llegó dañado."
+
+Few-shot:
+Comentario: "Excelente atención, todo llegó a tiempo." → Positivo
+Comentario: "Nunca más vuelvo a comprar aquí." → Negativo
+Comentario: "El pedido llegó, sin más." → Neutral
+Comentario: "El servicio fue rápido pero el producto llegó dañado." →
+```
 
 ### Estimulo de roles:
 Se le pide a Claude que responda como si fuera una persona específica o un rol profesional. Esto le proporciona contexto adicional y puede hacer que las respuestas sean mas relevantes, precisas, enfocadas y procesionales.
 
+```
+Actúa como un ingeniero de DevOps con 10 años de experiencia en infraestructura
+cloud. Explícame, como si estuvieras entrenando a un desarrollador junior, por
+qué es recomendable usar contenedores en lugar de máquinas virtuales completas
+para desplegar microservicios.
+```
+
 ### Estimulo de cadena de pensamiento:
 Se le pide a Claude que muestre su trabajo. Divide una tarea en pasos claros y ordenados, enumera suposiciones y produce verificaciones inmediatas antes de la respuesta final. Hace que las tareas complejas sean más fáciles de verificar y refinar, teniendo el recorrido estructurado con pasos, puntos de decision y justificaciones.
 
+```
+Un servidor procesa 1200 solicitudes por minuto en promedio, pero durante los
+picos de tráfico este número se triplica durante 10 minutos al día. Necesito
+saber cuántas solicitudes por segundo debe soportar el servidor en el peor
+caso. Piensa paso a paso, muestra los cálculos intermedios y verifica el
+resultado antes de darme la respuesta final.
+```
+
 ### Control de formato:
 Es la capacidad de indicarle a Claude exactamente cómo se desea que estructure una respuesta ya sea JSON, YAML, Markdown, tablas, código, entre otras.
+
+```
+Dame una lista de 5 lenguajes de programación backend con su año de creación
+y su principal caso de uso. Responde únicamente en formato JSON, con esta
+estructura exacta: [{ "lenguaje": "", "año": 0, "uso_principal": "" }]
+```
 
 ## Preguntas para solucionar problemas de *prompts*:
 
