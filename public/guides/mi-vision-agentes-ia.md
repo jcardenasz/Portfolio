@@ -1,3 +1,6 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<div style="font-family: 'Montserrat', sans-serif;">
+
 # Agentes de IA y nuestra relación con ellos
 
 Durante los últimos años hemos pasado de utilizar la inteligencia artificial como una herramienta de consulta y asistencia a verla ejecutar tareas completas con poca o ninguna intervención humana. Esta evolución ha dado origen a un nuevo concepto: **los agentes de IA**.
@@ -151,3 +154,5 @@ En mi opinión, los agentes de IA no reemplazarán a los profesionales, sino que
 ---
 
 *Nota creada por **Juan Camilo Cárdenas Zabala** y adaptada a partir del curso **IA sin límites** de AWS, complementada con información pública de Google Cloud, AWS e IBM.*
+
+</div>
