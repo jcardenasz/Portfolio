@@ -1,3 +1,6 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<div style="font-family: 'Montserrat', sans-serif;">
+
 # Guía corta sobre el AI-Driven Development Life Cycle (AI-DLC)
 
 La inteligencia artificial está cambiando rápidamente la forma en que desarrollamos software. Ya no se limita a asistir a los desarrolladores con pequeñas tareas: los agentes de IA pueden participar en el análisis de requisitos, la planificación, el diseño, la implementación, las pruebas e incluso en actividades de operación y despliegue.
@@ -292,3 +295,5 @@ El reto para los equipos de ingeniería ya no será únicamente aprender a utili
 ---
 
 *Guía creada por **Juan Camilo Cárdenas Zabala**, adaptando información de las referencias anteriores y material sobre AI-Driven Development Life Cycle.*
+
+</div>
