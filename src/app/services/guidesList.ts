@@ -10,7 +10,7 @@ export const GUIDES: GuideMeta[] = [
     fileName: 'guia-corta-prompt-engineering.md',
   },
   {
-    route: 'mi-vision-agentes-ia.md',
+    route: 'mi-vision-agentes-ia',
     title: 'Mi Visión sobre los Agentes de IA',
     description: 'Una nota corta sobre mi visión personal al respecto de los agentes de inteligencia artificial.',
     date: '30-Julio-2026',
