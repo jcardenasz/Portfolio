@@ -1,3 +1,6 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<div style="font-family: 'Montserrat', sans-serif;">
+
 # Guía corta sobre OpenSpec y Spec-Driven Development
 
 **OpenSpec** es un framework de desarrollo de software orientado a **Spec-Driven Development (SDD)** y creado por **Fission-AI**. Su propósito es estructurar el proceso de desarrollo alrededor de especificaciones que describen qué debe hacer el sistema, cómo debe cambiar y cómo validar que la implementación cumple con lo esperado.
@@ -390,3 +393,5 @@ Aquí te dejo una tabla donde verás como es la sintaxis para diferentes asisten
 ---
 
 *Guía creada por **Juan Camilo Cárdenas Zabala**, adaptando información de la documentación oficial de OpenSpec y material sobre Spec-Driven Development.*
+
+</div>
